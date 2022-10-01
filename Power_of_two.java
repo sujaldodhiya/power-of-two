@@ -1,15 +1,15 @@
-package com.akshat.number_programs;
-
 import java.util.Scanner;
 
-public class Power_of_two {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+public class Power_of_two 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);  // Initialize the Scanner class
 
         System.out.println("Enter the number to be checked for power of 2");
         int number = sc.nextInt(); //storing input of an integer through scanner class function
 
-        int temp=0,flag=0,i;
+        int temp=0,flag=0,i;  // Declare variables
         for (i=0;i<=number;i++) {
             temp = (int)Math.pow(2,i); //calculating and storing the value of 2 raised to i in temp variable
 
@@ -20,7 +20,8 @@ public class Power_of_two {
             else
                flag = 0;
         }
-        if (flag == 1) {
+        if (flag == 1)  // Condition to get final output
+        {
             System.out.println("Yes, the number "+number+" is a power of two");
             System.out.println("2 raised to "+i+" gives "+number);
         }
